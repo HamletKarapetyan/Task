@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addedToDos{
+    width: 80%;
+    height: 300px; 
+    margin: 20px;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toDoText{
+    text-align: center;
+}
+
+.addedToDo{
+    width: 90%;
+    border: 1px solid gray;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #d7d7e2;
+    margin: 7px 0;
+    border: none;
+}
+
+.addedToDo input{
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.elHolder {
+    width: 45%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: rgb(139, 218, 139);
+}
+
+.toDoList{
+    border-radius: 12px;
+    padding-top: 20px;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+
+.toDoList form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.toDoList form input{
+    margin-top: 30px;
+    outline: none;
+    width: 60%;
+    height: 35px;
+    border: 1px solid #17133a;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px;
+} 
+
+
+.toDoList form button{
+    margin-top: 30px;
+    width: 60px;
+    height: 35px;
+    font-size: 17px;
+    color: rgb(245, 241, 241);
+    background-color: #17133a;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: .3s;
+}
+
+.toDoList form button:hover{
+    color: rgb(245, 241, 241);
+    background-color: #4c458d;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button{
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: .3s;
+    border: none;
+}
+
+.deleteToDo:hover{
+    background-color: rgb(250, 66, 66);
+    color: white;
+    cursor: pointer;
+}
+
+.doneToDo:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}

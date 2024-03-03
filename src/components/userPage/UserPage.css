@@ -1,0 +1,89 @@
+.main {
+    display: grid;
+    grid-template-areas:
+        "userInfo dashboard";
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.userInfo {
+    grid-area: userInfo;
+    min-height: 100vh;
+    min-width: 300px;
+    margin: 20px 0 20px 20px;
+    background-color: aliceblue;
+    border-radius: 12px;
+}
+
+.userInfo h1 {
+    color: rgb(12, 12, 75);
+    text-align: center;
+}
+
+.userInfo h3{
+    color: rgb(12, 12, 75);
+    text-align: center;
+    font-style: italic;
+}
+
+.dashboard {
+    grid-area: dashboard;
+    min-height: 100vh;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+    background-color: aliceblue;
+    border-radius: 12px;
+}
+
+
+.imageHolder {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.imageHolder img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px dashed #17133a;
+}
+
+.fileInputButton {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    background-color: #17133a;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    left: 50px;
+    bottom: 25px;
+  }
+  
+  .fileInputButton:hover {
+    background-color: #0056b3;
+  }
+
+  .dashboard-item {
+    position: relative;
+  }
+  
+  .deleteButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #17133a; 
+  }

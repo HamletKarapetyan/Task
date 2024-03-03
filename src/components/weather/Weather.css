@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather{
+    padding-top: 20px;
+    border-radius: 12px;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.weatherText{
+    text-align: center;
+}
+
+.weather form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.weather form input{
+    margin-top: 30px;
+    outline: none;
+    width: 60%;
+    height: 35px;
+    border: 1px solid #17133a;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px;
+}
+
+.weather form button{
+    margin-top: 30px;
+    width: 60px;
+    height: 35px;
+    font-size: 17px;
+    color: rgb(245, 241, 241);
+    background-color: #17133a;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: .3s;
+}
+
+.weather form button:hover{
+    color: rgb(245, 241, 241);
+    background-color: #4c458d;
+    cursor: pointer;
+}
+
+.foundWeather{
+    width: 80%;
+    min-height: 300px;
+    margin: 20px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.foundWeather h4{
+    font-size: 22px;
+}
+
+.weatherInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; 
+}
+
+
+.weatherInfo h6 {
+    width: 180px;
+    height: 120px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background-color: #d7d7e2;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(43, 42, 42);
+    font-weight: 400;
+}

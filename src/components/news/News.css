@@ -1,0 +1,60 @@
+.news{
+    width: 195%;
+    min-height: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.newsBox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 12px;
+}
+
+.newsBox img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.newsButtons{
+    position: absolute;
+    right: -450px;
+    top: 20px;
+}
+
+.newsButtons button{
+    margin: 0 5px;
+    height: 30px;
+    padding:0 10px;
+    font-size: 17px;
+    color: rgb(245, 241, 241);
+    background-color: #17133a;
+    transition: .3s;
+    border-radius: 8px;
+    
+}
+
+.newsButtons button:hover{
+    color: rgb(245, 241, 241);
+    background-color: #4c458d;
+    cursor: pointer;
+}
+
+.newsHolder{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsHolder p{
+    font-style: italic;
+}
+
+.loading{
+    text-align: center;
+    padding: 100px 0;
+    font-style: italic;
+    font-size: 20px;
+}
